@@ -39,6 +39,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+# Externí knihovny
+INSTALLED_APPS+=[
+    
+]
+
+# Aplikace backendu
+INSTALLED_APPS+=[
+    'zkouska'
+]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
