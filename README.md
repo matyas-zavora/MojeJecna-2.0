@@ -6,3 +6,6 @@ The all new and better MojeJečná
 |------------|
 | 02.10.2023 |
 ## Plán práce
+### Michal Hrouda
+
+### Matyáš Závora
