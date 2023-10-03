@@ -9,10 +9,10 @@ The all new and better MojeJečná
 ## Plán práce
 
 __legenda__
-:white_check_mark:
-:x:
-:heavy_exclamation_mark:
-:clock1:
+:white_check_mark:  <br>
+:x: <br>
+:heavy_exclamation_mark: <br>
+:clock1: <br>
 
 ### Michal Hrouda
 
