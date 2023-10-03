@@ -5,7 +5,15 @@ The all new and better MojeJečná
 | DATUM      |
 |------------|
 | 02.10.2023 |
+
 ## Plán práce
+
+> __legenda__ <br>
+> :white_check_mark: = hotovo <br>
+> :x: = není hotovo <br>
+> :heavy_exclamation_mark: = je potřeba <br>
+> :clock1: = pracuje se na tom <br>
+
 ### Michal Hrouda
 
 ### Matyáš Závora
