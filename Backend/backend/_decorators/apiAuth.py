@@ -2,7 +2,7 @@
 
 def check_auth():
     """
-    Dekorátor, která zkontroluje jestli v headeru requestu jsou atributy
+    Dekorátor, který zkontroluje jestli v headeru requestu jsou atributy
     - hash
     - user_id
     
