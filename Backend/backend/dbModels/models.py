@@ -46,6 +46,3 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return self.username
-
-    def last_seen(self):
-        return cache.get('seen_%s' % self.username)
