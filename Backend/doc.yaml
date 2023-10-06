@@ -32,5 +32,10 @@ tags:
   - name: Suplování
     description: ''
 paths:
+ /users:
+  get:
+   tags:
+    - Authentikace
+   
 components:
   schemas:
