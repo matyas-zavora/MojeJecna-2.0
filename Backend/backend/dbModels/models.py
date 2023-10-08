@@ -39,10 +39,10 @@ class DjangoUser(AbstractBaseUser, PermissionsMixin):
     REQUIRED_FIELDS = []
 
     def save(self, *args, **kwargs):
-        super(User, self).save(*args, **kwargs)
+        super(DjangoUser, self).save(*args, **kwargs)
 
     def delete(self, *args, **kwargs):
-        super(User, self).delete(*args, **kwargs)
+        super(DjangoUser, self).delete(*args, **kwargs)
 
     def __str__(self):
         return self.username

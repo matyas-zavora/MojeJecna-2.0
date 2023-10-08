@@ -5,6 +5,8 @@ import sys
 
 
 def main():
+    script_path = os.path.dirname(os.path.dirname(os.path.abspath(sys.argv[0])))
+    sys.path.append(script_path)
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')
     try:
