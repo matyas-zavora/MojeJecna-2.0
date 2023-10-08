@@ -1,8 +1,9 @@
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
+from response import Response
 from _decorators.apiAuth import check_auth, check_hash
+
+
 
 @check_auth()
 def login(request):
-    print(request.GET.get('username'))
-    print(request.GET.get('password'))
-    return JsonResponse({"name": "Mates voní"}, status=200)
+    return HttpResponse("<h1>ahojky</h1>")

@@ -1,4 +1,5 @@
 from django.http import JsonResponse
+from response import Response
 
 def check_auth():
     """
@@ -11,11 +12,16 @@ def check_auth():
     def decorator(view_func):
         def wrapper_func(request, *args, **kwargs):
             atributes = [
-            request.headers.get('user_id',None),
-            request.headers.get('user_hash',None)
+            request.headers.get('User-Id',None),
+            request.headers.get('User-Hash',None)
             ]
             if None in atributes:
-                return JsonResponse({}, status=404)
+                queries: dict = dict(request.GET)
+                return Response.make_JSONresponse(
+                    401,
+                    response_code='',
+                    **request.GET.dict()
+                )
             return view_func(request, *args, **kwargs)
         return wrapper_func
     return decorator
