@@ -8,6 +8,11 @@
 | vytvoření skriptu na ssh tunnel    | 03.10.2023   |        |                 |
 | připojení na databázi              | 03.10.2023   |        |                 |
 
+### Chybové kódy
+
+__400__:
+
+
 ### API
 
 ### Databáze
