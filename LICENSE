@@ -1,17 +1,17 @@
 Project License Agreement
 
-This Project License Agreement ("Agreement") is entered into on 10.10.2023, by and between Michal Hrouda ("Licensor") and SPŠE Ječná ("Licensee").
+This Project License Agreement ("Agreement") is entered into on 10.10.2023, by and between Michal Hrouda and Matyáš Závora ("Licensors") and SPŠE Ječná ("Licensee").
 
 Project Information:
 
 Project Name: MojeJečná
 Description: Electronic classbook platform for SPŠE Ječná
 License Grant:
-Licensor hereby grants Licensee a non-exclusive, non-transferable license to use the MojeJečná project under the following terms and conditions:
+Licensors hereby grants Licensee a non-exclusive, non-transferable license to use the MojeJečná project under the following terms and conditions:
 
-Scope of License: The licensee may use the products as he wishes in agreement with the Licensor.
+Scope of License: The licensee may use the products as he wishes in agreement with the Licensors.
 
-Attribution: Licensee agrees to provide proper attribution to the Licensor as the original creator of the MojeJečná project in all derivative works, documentation, and promotional materials.
+Attribution: Licensee agrees to provide proper attribution to the Licensors as the original creator of the MojeJečná project in all derivative works, documentation, and promotional materials.
 
 Licensee Responsibilities:
 
@@ -20,14 +20,16 @@ Licensee shall use the MojeJečná project in compliance with all applicable law
 Licensee shall not reverse engineer, decompile, disassemble, or attempt to derive the source code of the MojeJečná project.
 
 Term and Termination:
-This Agreement shall commence on the Effective Date and continue until terminated by either party. Licensor reserves the right to terminate this license at any time.
+This Agreement shall commence on the Effective Date and continue until terminated by either party. Licensors reserves the right to terminate this license at any time.
 
 Disclaimer:
-THE MOJEJEČNÁ PROJECT IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. LICENSOR SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING OUT OF THE USE OF THE MOJEJEČNÁ PROJECT.
+THE MOJEJEČNÁ PROJECT IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. Licensors SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING OUT OF THE USE OF THE MOJEJEČNÁ PROJECT.
 
-Licensor:
-Michal Hrouda
-hrouda2@spsejecna.cz
+Licensors:
+- Michal Hrouda
+  hrouda2@spsejecna.cz
+- Matyáš Závora
+  zavora@spsejecna.cz
 
 Licensee:
 SPŠE Ječná
