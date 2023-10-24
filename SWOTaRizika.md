@@ -6,6 +6,7 @@
 4. 
 
 **SWOT**
+
 **S(trengths):**
 - Zkušenosti z minulého roku
 - Praxe z práce
