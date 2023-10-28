@@ -13,3 +13,10 @@ class User(models.Model):
     #last_name = models.CharField(blank=False, null=False, max_length=150)
     
     #school info
+    
+    def get_json(self):
+        return {
+            "id": self.id,
+            "username": self.username,
+            "password": self.password
+        }

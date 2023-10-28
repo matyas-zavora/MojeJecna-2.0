@@ -1,7 +1,9 @@
 from django.urls import path
-import api.authentication as auth
+from api.authentication.user import UserDetailView
 
 urlpatterns = [
     #Authentication
-    path('login/', auth.login, name='api_auth_login')
+    path('auth/user/', UserDetailView.as_view(), name='api_auth_login'),
+    #path('auth/group/', , name=''),
+    #path('auth/mnUserGroup/', , name=''),
 ]
