@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="288b4c76-628d-438c-b863-2708dda2f54d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Backend/doc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/doc.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerConfigs">
+    <option name="configs">
+      <option value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/composer.json" />
+    </option>
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/Frontend/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;matyas-zavora&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="ed3f82db-70b1-4280-b8e3-8cc9b06a0939" />
+        <option name="url" value="https://github.com/matyas-zavora/MojeJecna-2.0.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
+    <include_path>
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/forms" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/php-generator" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/database" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/robot-loader" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/bootstrap" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/finder" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/latte/latte" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/caching" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/composer" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/http" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/tracy/tracy" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/application" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/tokenizer" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/neon" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/component-model" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/safe-stream" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/routing" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/di" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/nette" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/security" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/mail" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/forms" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/robot-loader" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/database" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/symfony/thanks" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/tracy/tracy" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/composer" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/http" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/di" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/finder" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/tester" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/application" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/bootstrap" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/neon" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/component-model" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/latte/latte" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/mail" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/caching" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/security" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/routing" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/php-generator" />
+    </include_path>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2WU4oVCZBp7fT06BQYSkSzoFl3r" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/zavoram/Documents/GitHub/MojeJecna-2.0&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="288b4c76-628d-438c-b863-2708dda2f54d" name="Changes" comment="" />
+      <created>1696774000098</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696774000098</updated>
+      <workItem from="1696774001411" duration="315000" />
+      <workItem from="1696774364696" duration="6792000" />
+      <workItem from="1696851766999" duration="23000" />
+      <workItem from="1698591470436" duration="313000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

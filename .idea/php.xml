@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MessDetectorOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCSFixerOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCodeSnifferOptionsConfiguration">
+    <option name="highlightLevel" value="WARNING" />
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/forms" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/php-generator" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/database" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/robot-loader" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/bootstrap" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/finder" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/latte/latte" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/caching" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/composer" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/http" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/tracy/tracy" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/application" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/tokenizer" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/neon" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/component-model" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/safe-stream" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/routing" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/di" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/nette" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/security" />
+      <path value="$PROJECT_DIR$/Frontend/vendor/nette/mail" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/forms" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/robot-loader" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/database" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/symfony/thanks" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/tracy/tracy" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/composer" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/http" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/di" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/finder" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/tester" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/application" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/bootstrap" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/neon" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/component-model" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/latte/latte" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/mail" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/caching" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/security" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/routing" />
+      <path value="$PROJECT_DIR$/Frontend/MojeJecna-2.0/vendor/nette/php-generator" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
+  <component name="PhpStanOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PsalmOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+</project>
