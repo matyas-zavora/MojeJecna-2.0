@@ -39,7 +39,7 @@ INSTALLED_APPS = [
 
 # Externí knihovny
 INSTALLED_APPS+=[
-    
+    'rest_framework',
 ]
 
 # Aplikace backendu
