@@ -5,6 +5,7 @@ class Group(models.Model):
     #common informations
     name = models.CharField(max_length=150, unique=True)
     description = models.TextField(max_length=800, blank=True, null=True)
+    code = models.CharField(max_length=4)
     
     def __str__(self) -> str:
         return self.name

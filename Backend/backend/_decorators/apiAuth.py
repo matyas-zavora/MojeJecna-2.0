@@ -28,3 +28,6 @@ def check_auth():
 
 def check_hash():
     pass
+
+def allowed_groups(groups=[]):
+    pass
