@@ -1,7 +1,7 @@
 from django.http import JsonResponse, HttpResponse
 from django.core.exceptions import ObjectDoesNotExist
 from response import Response
-from _decorators.apiAuth import check_auth, check_hash
+from Backend.backend._decorators.authDecoratos import AuthDecorators
 from rest_framework.views import APIView
 from _methods.hash import sha256_hash
 
