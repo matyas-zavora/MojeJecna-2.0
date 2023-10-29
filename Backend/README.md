@@ -11,6 +11,8 @@
 ### Chybové kódy
 
 __400__:
+- 400_0001: atribut není v query
+- 400_0002: 
 
 
 ### API
