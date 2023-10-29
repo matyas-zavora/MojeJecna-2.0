@@ -12,6 +12,8 @@ class UserDetailView(APIView):
     def get(self, request):
         pass
 
+    @AuthDecorators.check_hash()
+    @AuthDecorators.allowed_groups([])
     def post(self, request):
         try:
             raw_data = dict(request.POST)
