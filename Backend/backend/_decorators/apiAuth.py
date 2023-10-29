@@ -1,14 +1,9 @@
 from django.http import JsonResponse
 from response import Response
+from _methods.hash import sha256_hash
+from dbModels.entities.authentication.user import User
 
 def check_auth():
-    """
-        Dekorátor, který zkontroluje jestli v headeru requestu jsou atributy
-        - user_hash
-        - user_id
-
-
-    """
     def decorator(view_func):
         def wrapper_func(request, *args, **kwargs):
             atributes = [
@@ -27,7 +22,20 @@ def check_auth():
     return decorator
 
 def check_hash():
-    pass
+    def decorator(view_func):
+        def wrapper_func(request, *args, **kwargs):
+            user_id = request.headers.get('User-Id',None),
+            user_hash = request.headers.get('User-Hash',None)
+            user: User = User.objects.get(id=user_id)
+            if not user_hash == user.make_auth_hash():
+                return Response.make_JSONresponse(
+                    401,
+                    response_code='',
+                    atribute='User-Hash'
+                )
+            return view_func(request, *args, **kwargs)
+        return wrapper_func
+    return decorator
 
-def allowed_groups(groups=[]):
+def allowed_groups(group_codes=[]):
     pass

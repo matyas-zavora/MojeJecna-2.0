@@ -13,29 +13,39 @@ class UserDetailView(APIView):
         pass
 
     def post(self, request):
-        raw_data = dict(request.POST)
-        
-        for mandatory_atribute in []:
-            return Response.make_JSONresponse(400)
-        
-        processed_data = {}
-        for key in raw_data:
-            if raw_data[key][0] == '':
-                processed_data[key] = None
-                continue
-            elif raw_data[key][0].isdigit():
-                processed_data[key] = int(raw_data[key][0])
-                continue
-            processed_data[key] = raw_data[key][0]
-        
-        processed_data['password'] = sha256_hash(processed_data.pop('raw_password'))
-        
-        print(processed_data)
-        
-        user = User.objects.create(**processed_data)
-        
-        return Response.make_JSONresponse(201, content = user.get_json())
+        try:
+            raw_data = dict(request.POST)
 
+            for mandatory_atribute in ['username', 'raw_password', 'email', 'first_name', 'last_name', 'user_type_id']:
+                if not mandatory_atribute in raw_data:
+                    return Response.make_JSONresponse(400, response_code='400_0002', atribute=mandatory_atribute)
+                
+            for optional_atribute in ['user_class_id', 'education_group_id', 'middle_name']:
+                if not optional_atribute in raw_data:
+                    raw_data[optional_atribute] = None
+
+            processed_data = {}
+            for key in raw_data:
+                if raw_data[key][0] == '':
+                    processed_data[key] = None
+                    continue
+                elif raw_data[key][0].isdigit():
+                    processed_data[key] = int(raw_data[key][0])
+                    continue
+                processed_data[key] = raw_data[key][0]
+
+            processed_data['password'] = sha256_hash(processed_data.pop('raw_password'))
+
+            user = User.objects.create(**processed_data)
+
+            user_json = user.get_json()
+            user_json["hash"] = user.make_auth_hash()
+            del user_json["password"]
+
+            return Response.make_JSONresponse(201, content = user_json)
+        except BaseException as e:
+            return Response.make_JSONresponse(500)
+        
     def put(self, request):
         pass
 
@@ -57,10 +67,13 @@ def get_auth(request):
         except ObjectDoesNotExist:
             return Response.make_JSONresponse(400, atribute='username')
 
-        if not user.password == password:
+        if not user.password == sha256_hash(password):
             return Response.make_JSONresponse(400, atribute='password')
         
-        return Response.make_JSONresponse(200, None, content = user.get_json())
+        user_json = user.get_json()
+        user_json["hash"] = user.make_auth_hash()
+        del user_json["password"]
+        
+        return Response.make_JSONresponse(200, None, content = user_json)
     except BaseException as e:
-        print(type(e), "==>",e)
         return Response.make_JSONresponse(500)

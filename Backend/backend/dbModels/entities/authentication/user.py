@@ -1,13 +1,15 @@
 from django.db import models
+from _methods.hash import sha256_hash
+from backend.settings import API_CONSTANT
 
 class User(models.Model):
     id = models.AutoField(primary_key=True, auto_created=True)
-    #common informations
+    #common information
     username = models.CharField(max_length=150, unique=True)
     password = models.CharField(max_length=256)
     email = models.EmailField(blank=True, null=True, unique=True)
     
-    #personal infomations
+    #personal infomation
     first_name = models.CharField(blank=False, null=False, max_length=150)
     middle_name = models.CharField(blank=True, null=True, max_length=150)
     last_name = models.CharField(blank=False, null=False, max_length=150)
@@ -19,6 +21,9 @@ class User(models.Model):
     
     def __str__(self) -> str:
         return self.username
+    
+    def make_auth_hash(self):
+        return sha256_hash(f'{self.id}-{API_CONSTANT}')
     
     def get_json(self):
         return {

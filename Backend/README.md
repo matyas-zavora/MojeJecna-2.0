@@ -12,8 +12,14 @@
 
 __400__:
 - 400_0001: atribut není v query
-- 400_0002: 
+- 400_0002: atribut není ve formuláři
 
+
+### Hash
+
+konstanta=jecnajevecna
+
+id_uzivatele-konstanta
 
 ### API
 
