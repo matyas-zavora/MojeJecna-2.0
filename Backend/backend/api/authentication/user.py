@@ -1,7 +1,7 @@
 from django.http import JsonResponse, HttpResponse
 from django.core.exceptions import ObjectDoesNotExist
 from response import Response
-from Backend.backend._decorators.authDecoratos import AuthDecorators
+from _decorators.authDecoratos import AuthDecorators
 from rest_framework.views import APIView
 from _methods.hash import sha256_hash
 
@@ -69,6 +69,9 @@ def get_auth(request):
         except ObjectDoesNotExist:
             return Response.make_JSONresponse(400, atribute='username')
 
+        print(user.password)
+        print(sha256_hash(password))
+        print(not user.password == sha256_hash(password))
         if not user.password == sha256_hash(password):
             return Response.make_JSONresponse(400, atribute='password')
         

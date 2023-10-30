@@ -26,7 +26,9 @@ API_CONSTANT = 'jecnajevecna'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
+CSRF_TRUSTED_ORIGINS = ['http://s-hrouda2.dev.spsejecna.net']
 
 # Application definition
 
@@ -84,11 +86,22 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'MojeJecna',
+        'USER': 'db_user',
+        'PASSWORD': 'heslo',
+        'HOST':'localhost',
+        'PORT':'3306',
     }
 }
 
