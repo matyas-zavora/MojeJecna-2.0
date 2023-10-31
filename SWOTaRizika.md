@@ -1,8 +1,10 @@
 # SWOT a rizika
 
-1. viz číslo 4
-2. viz číslo 1
-3. viz číslo 2
+1., 2., 3.
+- Nedodělání projektu (nízká) - předejdeme tomu plánováním viz plánování schůzek v README
+- Zaseknutí se nad složitými věcmi projektu (vysoká) - naučíme se co se dá
+- Nekompabilita s jinými systémy (střední) - docker nebo postupné zkoušení na serveru
+
 4. 
 
 **SWOT**
