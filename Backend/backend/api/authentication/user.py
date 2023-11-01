@@ -1,5 +1,6 @@
 from django.http import JsonResponse, HttpResponse
 from django.core.exceptions import ObjectDoesNotExist
+from django.views.decorators.csrf import csrf_exempt
 from response import Response
 from _decorators.authDecoratos import AuthDecorators
 from rest_framework.views import APIView
@@ -14,7 +15,7 @@ class UserDetailView(APIView):
 
     @AuthDecorators.check_hash()
     @AuthDecorators.allowed_groups([])
-    def post(self, request):
+    def post(self, request, format=None):
         try:
             raw_data = dict(request.POST)
 
@@ -54,10 +55,14 @@ class UserDetailView(APIView):
     def delete(self, request):
         pass
     
-def get_auth(request):
+@csrf_exempt
+def POST_auth(request):
     try:
-        username = request.GET.get('username', None)
-        password = request.GET.get('password', None)
+        if not request.method == 'POST':
+            return Response.make_JSONresponse(405,atribute='method',content={'method': request.method})        
+        
+        username = request.POST.get('username', None)
+        password = request.POST.get('password', None)
         
         if not username:
             return Response.make_JSONresponse(400, response_code="400_0001", atribute='username')
@@ -69,9 +74,7 @@ def get_auth(request):
         except ObjectDoesNotExist:
             return Response.make_JSONresponse(400, atribute='username')
 
-        print(user.password)
-        print(sha256_hash(password))
-        print(not user.password == sha256_hash(password))
+        print('správné heslo ==> ',user.password == sha256_hash(password))
         if not user.password == sha256_hash(password):
             return Response.make_JSONresponse(400, atribute='password')
         

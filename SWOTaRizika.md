@@ -1,9 +1,12 @@
 # SWOT a rizika
 
 1., 2., 3.
+rizika projektu
+---------------
 - Nedodělání projektu (nízká) - předejdeme tomu plánováním viz plánování schůzek v README
 - Zaseknutí se nad složitými věcmi projektu (vysoká) - naučíme se co se dá
-- Nekompabilita s jinými systémy (střední) - docker nebo postupné zkoušení na serveru
+- Nekompabilita systémem na kterém bude spouštět projekt (střední) - vývoj je na stejném stroji
+- nikdo to nekoupí (vysoká) - nejde předejít
 
 4. 
 
@@ -20,9 +23,9 @@
 - Nedostatečné znalosti
 
 **O(pportunities):**
-- Maturita
-- Prodej projektu (nikdo to nekoupí)
+- Maturita 
+- Prodej projektu
 
 **T(hreats):**
-- Nedodělání projektu (nízká) - předejdeme tomu plánováním viz plánování schůzek v README
-- Složitost projektu (vysoká) - naučíme se co se dá
+- Nedodělání projektu (nízká) - předejdeme tomu plánováním prací
+- Složitost projektu (vysoká) - předejdeme tomu plánováním prací

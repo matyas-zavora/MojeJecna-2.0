@@ -101,7 +101,7 @@ DATABASES = {
         'USER': 'db_user',
         'PASSWORD': 'heslo',
         'HOST':'localhost',
-        'PORT':'3306',
+        'PORT':'5000',
     }
 }
 

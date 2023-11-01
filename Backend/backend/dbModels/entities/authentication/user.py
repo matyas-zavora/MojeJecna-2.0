@@ -14,7 +14,7 @@ class User(models.Model):
     middle_name = models.CharField(blank=True, null=True, max_length=150)
     last_name = models.CharField(blank=False, null=False, max_length=150)
     
-    #school info
+    #school info/ FK
     user_type = models.ForeignKey('UserType', on_delete=models.CASCADE)
     user_class = models.ForeignKey('UserClass',blank=True, null=True, on_delete=models.SET_NULL)
     education_group = models.ForeignKey('EducationGroup',blank=True, null=True, on_delete=models.SET_NULL)

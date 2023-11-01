@@ -1,10 +1,10 @@
 from django.urls import path
-from api.authentication.user import UserDetailView, get_auth
+from api.authentication.user import UserDetailView, POST_auth
 
 urlpatterns = [
     #Authentication
-    path('auth/user/', get_auth, name = ''),
-    path('user/', UserDetailView.as_view(), name = 'api_auth_login'),
+    path('auth/user/', POST_auth),
+    path('user/', UserDetailView.as_view()),
     
     #path('auth/group/', , name=''),
     #path('auth/mnUserGroup/', , name=''),
