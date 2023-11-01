@@ -16,5 +16,7 @@ The all new and better MojeJečná
 
 ### Michal Hrouda
 http://s-hrouda2.dev.spsejecna.net/admin/
+username: root
+heslo: heslojeveslo
 
 ### Matyáš Závora
