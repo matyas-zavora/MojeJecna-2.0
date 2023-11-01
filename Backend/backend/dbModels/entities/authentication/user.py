@@ -29,7 +29,7 @@ class User(models.Model):
         return {
             "id": self.id,
             "username": self.username,
-            "password": self.password,
+            #"password": self.password,
             "name":{
                 "first_name": self.first_name,
                 "middle_name": self.middle_name,

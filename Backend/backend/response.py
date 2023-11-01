@@ -29,7 +29,7 @@ class Response:
             "meta":Response.make_meta(code, response_code = response_code, atribute = atribute)
         }
         response.update(kwargs)
-        if response["meta"]["status"] == "OK":
+        if response["meta"]["status"] == "OK" and not content is None:
             if type(content) == list:
                 response["count"] = len(content)
             response["content"]=content
