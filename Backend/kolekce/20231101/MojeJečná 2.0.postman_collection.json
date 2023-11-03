@@ -1,0 +1,284 @@
+{
+	"info": {
+		"_postman_id": "03ef55fd-59fc-4707-be10-bb476494ee83",
+		"name": "MojeJečná 2.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28576281"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "user",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Id",
+										"value": "1",
+										"type": "text"
+									},
+									{
+										"key": "User-Hash",
+										"value": "f9324402f707e06c715504b5ff2d6a4e6b08754cc550ce3b3485911db9bcf39d",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{root}}user/?user_type=1",
+									"host": [
+										"{{root}}user"
+									],
+									"path": [
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3",
+											"disabled": true
+										},
+										{
+											"key": "username",
+											"value": "admin",
+											"disabled": true
+										},
+										{
+											"key": "user_type",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "User-Id",
+										"value": "1",
+										"type": "text"
+									},
+									{
+										"key": "User-Hash",
+										"value": "f9324402f707e06c715504b5ff2d6a4e6b08754cc550ce3b3485911db9bcf39d",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "Závora",
+											"type": "text"
+										},
+										{
+											"key": "raw_password",
+											"value": "megaheslo",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "UwU3@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "first_name",
+											"value": "Matyáš",
+											"type": "text"
+										},
+										{
+											"key": "middle_name",
+											"value": "Frajer",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "Závora",
+											"type": "text"
+										},
+										{
+											"key": "user_type",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "user_class",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "education_group",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{root}}user/",
+									"host": [
+										"{{root}}user"
+									],
+									"path": [
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{root}}auth/user/",
+									"host": [
+										"{{root}}auth"
+									],
+									"path": [
+										"user",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{root}}/user/",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"user",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "group",
+					"item": []
+				},
+				{
+					"name": "mnUserGroup",
+					"item": []
+				},
+				{
+					"name": "user_auth",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "Hrouda",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "heslo",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{root}}auth/user/?username=Hrouda&password=heslo",
+							"host": [
+								"{{root}}auth"
+							],
+							"path": [
+								"user",
+								""
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "Hrouda"
+								},
+								{
+									"key": "password",
+									"value": "heslo"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "script",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"let root=\"http://127.0.0.1:8000/api/\"\r",
+							"root = \"http://s-hrouda2.dev.spsejecna.net/api/\"\r",
+							"pm.globals.set(\"root\", root)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "asd",
+					"host": [
+						"asd"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

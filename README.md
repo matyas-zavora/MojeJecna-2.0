@@ -15,5 +15,8 @@ The all new and better MojeJečná
 > :clock1: = pracuje se na tom <br>
 
 ### Michal Hrouda
+http://s-hrouda2.dev.spsejecna.net/admin/
+username: root
+heslo: heslojeveslo
 
 ### Matyáš Závora
