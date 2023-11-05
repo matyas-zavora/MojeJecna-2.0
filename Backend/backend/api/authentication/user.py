@@ -28,8 +28,7 @@ class UserDetailView(APIView):
             return Response.make_JSONresponse(500)
 
     @RequestFormating.api_request_to_request
-    @AuthDecorators.check_hash()
-    @AuthDecorators.allowed_groups([])
+    @AuthDecorators.check_hash_and_permissions(group_codes=['0001','0002'])
     def post(self, request, format=None):
         try:
             raw_data = dict(request.POST)
@@ -78,6 +77,13 @@ def POST_auth(request):
         username = request.POST.get('username', None)
         password = request.POST.get('password', None)
         
+        request_params={
+            "body_params":{
+                "username": username,
+                "password": password
+            }
+        }
+        
         if not username:
             return Response.make_JSONresponse(400, response_code="400_0001", atribute='username')
         if not password:
@@ -96,6 +102,7 @@ def POST_auth(request):
         user_json["hash"] = user.make_auth_hash()
         #del user_json["password"]
         
-        return Response.make_JSONresponse(200, None, content = user_json)
+        return Response.make_JSONresponse(200, content = user_json, **request_params)
     except BaseException as e:
+        print(type(e)," ==> ", e)
         return Response.make_JSONresponse(500)

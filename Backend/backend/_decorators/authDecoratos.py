@@ -1,17 +1,10 @@
 from json import JSONEncoder
-from typing import Any, Union
+from typing import Any, Union, List
 from django.http import JsonResponse
 from response import Response
 from _methods.hash import sha256_hash
 from dbModels.entities.authentication.user import User
 from dbModels.entities.authentication.mnUserGroup import MnUserGroup
-
-class JSONResponse(JsonResponse):
-    
-    def __init__(self, data: Any, encoder: type[JSONEncoder] = ..., safe: bool = ..., json_dumps_params: dict[str, Any] | None = ..., **kwargs: Any) -> None:
-        super().__init__(data, encoder, safe, json_dumps_params, **kwargs)
-
-
 
 class AuthDecorators:
     
@@ -100,5 +93,21 @@ class AuthDecorators:
             return wrapper_func
         return decorator
     
-    def check_hash_and_permissions(group_codes='*'):
-        pass
+    @staticmethod
+    def check_hash_and_permissions(group_codes: Union[List[str], str] = '*'):
+        def decorator(view_func):
+            def wrapper_func(request, *args, **kwargs):
+                user_id = request.headers.get('User-Id',None)
+                user_hash = request.headers.get('User-Hash',None)
+                check_hash_result = AuthDecorators.__check_hash()
+                if not check_hash_result is None:
+                    return check_hash_result
+                
+                user_groups_codes = MnUserGroup.objects.filter(user__id=user_id).values_list('group__code', flat=True)
+                if not group_codes == '*' and not any(user_groups_codes, group_codes):
+                    return Response.make_JSONresponse(401)
+                
+                return view_func(request, *args, **kwargs)
+            return wrapper_func
+        return decorator
+        
